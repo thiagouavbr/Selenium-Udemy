@@ -1,0 +1,127 @@
+{
+  "id": "769c4a1a-8d89-4113-a61f-3f6539a5cbf7",
+  "version": "2.0",
+  "name": "testinho",
+  "url": "https://opensource-demo.orangehrmlive.com",
+  "tests": [{
+    "id": "b23a90de-d3f8-4964-ae5c-9e0ab81f606d",
+    "name": "testinho",
+    "commands": [{
+      "id": "1001e641-e0e5-473d-a011-e6c412adab80",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a4dd5800-3d82-470f-90ce-c3098fa0e794",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1376x744",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "fb80b2a1-882e-494c-97a5-cf9f02167906",
+      "comment": "",
+      "command": "click",
+      "target": "css=#divUsername > .form-hint",
+      "targets": [
+        ["css=#divUsername > .form-hint", "css:finder"],
+        ["xpath=//div[@id='divUsername']/span", "xpath:idRelative"],
+        ["xpath=//form/div[2]/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "0ab1d2f6-ded0-4684-b305-af38d6e2b464",
+      "comment": "",
+      "command": "type",
+      "target": "id=txtUsername",
+      "targets": [
+        ["id=txtUsername", "id"],
+        ["name=txtUsername", "name"],
+        ["css=#txtUsername", "css:finder"],
+        ["xpath=//input[@id='txtUsername']", "xpath:attributes"],
+        ["xpath=//div[@id='divUsername']/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "Admin"
+    }, {
+      "id": "50f29f19-0026-414d-a3ea-3a2b96510f2d",
+      "comment": "",
+      "command": "type",
+      "target": "id=txtPassword",
+      "targets": [
+        ["id=txtPassword", "id"],
+        ["name=txtPassword", "name"],
+        ["css=#txtPassword", "css:finder"],
+        ["xpath=//input[@id='txtPassword']", "xpath:attributes"],
+        ["xpath=//div[@id='divPassword']/input", "xpath:idRelative"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": "admin123"
+    }, {
+      "id": "67259349-12c1-445f-977d-495832f94755",
+      "comment": "",
+      "command": "click",
+      "target": "id=btnLogin",
+      "targets": [
+        ["id=btnLogin", "id"],
+        ["name=Submit", "name"],
+        ["css=#btnLogin", "css:finder"],
+        ["xpath=//input[@id='btnLogin']", "xpath:attributes"],
+        ["xpath=//div[@id='divLoginButton']/input", "xpath:idRelative"],
+        ["xpath=//div[5]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5bbdf46a-b0dc-4457-8b52-69306c95baa7",
+      "comment": "",
+      "command": "click",
+      "target": "id=welcome",
+      "targets": [
+        ["id=welcome", "id"],
+        ["linkText=Welcome Admin", "linkText"],
+        ["css=#welcome", "css:finder"],
+        ["xpath=//a[contains(text(),'Welcome Admin')]", "xpath:link"],
+        ["xpath=//a[@id='welcome']", "xpath:attributes"],
+        ["xpath=//div[@id='branding']/a[2]", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '#')]", "xpath:href"],
+        ["xpath=//a[2]", "xpath:position"],
+        ["xpath=//a[contains(.,'Welcome Admin')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "5a33aa42-331c-4003-9549-2c017b0d4166",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Logout",
+      "targets": [
+        ["linkText=Logout", "linkText"],
+        ["css=#welcome-menu li:nth-child(2) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Logout')]", "xpath:link"],
+        ["xpath=//div[@id='welcome-menu']/ul/li[2]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/index.php/auth/logout')]", "xpath:href"],
+        ["xpath=//li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Logout')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "8ffeafdd-9699-4020-b9dd-50cce5921ca7",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "86810845-1bac-4697-af29-a4075f5d1117",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["b23a90de-d3f8-4964-ae5c-9e0ab81f606d"]
+  }],
+  "urls": ["https://opensource-demo.orangehrmlive.com/"],
+  "plugins": []
+}
