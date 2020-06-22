@@ -1,4 +1,4 @@
-# Selenium-Udemy
+# Selenium Python - Step by Step for Beginners with Framework
 
 - Demo
   Project containing the first version for the lessons of the Udemy classes:
